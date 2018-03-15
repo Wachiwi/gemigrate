@@ -1,1 +1,22 @@
 language: crystal
+
+deploy:
+  - provider: releases
+    api_key:
+      secure: GITHUB_TOKEN
+    file: "gemigrate"
+    skip_cleanup: true
+    overwrite: true
+    on:
+      tags: true
+      branch: master
+  - provider: releases
+    api_key:
+      secure: GITHUB_TOKEN
+    file: "gemigrate"
+    skip_cleanup: true
+    prerelease: true
+    overwrite: true
+    on:
+      tags: false
+      branch: master
