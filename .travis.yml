@@ -2,8 +2,7 @@ language: crystal
 
 deploy:
   - provider: releases
-    api_key:
-      secure: GITHUB_TOKEN
+    api_key: $GITHUB_TOKEN
     file: "gemigrate"
     skip_cleanup: true
     overwrite: true
@@ -11,8 +10,7 @@ deploy:
       tags: true
       branch: master
   - provider: releases
-    api_key:
-      secure: GITHUB_TOKEN
+    api_key: $GITHUB_TOKEN
     file: "gemigrate"
     skip_cleanup: true
     prerelease: true
