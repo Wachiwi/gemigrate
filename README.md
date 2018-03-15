@@ -1,6 +1,6 @@
 # gemigrate
 
-This is a simple projet that aims to help with the problem to migrate gems from one ruby version to another.
+This is a simple project that aims to help with the problem to migrate gems from one ruby version to another.
 Sure there are smoother ways to achieve the result but I wanted a small binary to do that for me.
 
 Further I wanted to get some experience in writing a crystal CLI app and provision a binary via github.
