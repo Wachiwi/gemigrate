@@ -1,4 +1,5 @@
 language: crystal
+before_install: crystal deps
 install: crystal build --release src/*.cr
 deploy:
   - provider: releases
