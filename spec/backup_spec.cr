@@ -1,16 +1,16 @@
 require "./spec_helper"
 
-describe Backup do
+EXAMPLE_LOCAL_GEMS = [
+  "graphql",
+  "did_you_mean",
+  "bcrypt",
+  "nokogiri"
+]
 
-  EXAMPLE_LOCAL_GEMS = [
-    "graphql",
-    "did_you_mean",
-    "bcrypt",
-    "nokogiri"
-  ]
+describe Gemigrate::Backup do
 
   it "with argument" do
-    Gemigrate::Main.run("backup asd")
+
   end
 
   it "with multiple arguments" do
